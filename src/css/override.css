@@ -1,0 +1,215 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: janeausten;
+    src: url("../../assets/fonts/JaneAust.woff") format("woff");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: aspira;
+    src: url("../../assets/fonts/MyFontsWebfontsKit/webFonts/AspiraDEMO/font.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: pesaro;
+    src: url("../../assets/fonts/MyFontsWebfontsKit/webFonts/PesaroLight/font.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*build the pocket-size corporate surveillance device look*/
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "pesaro", sans-serif;
+    font-weight: 300;
+    line-height: 1.8em;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.heading {
+    width: 200px;
+    font-family: aspira, sans-serif;
+    line-height: 1.2em;
+    text-align: center;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    margin: 15px;
+}
+
+.study_title {
+    font-size: 72px;
+    margin: 30px 0 20px 10px;
+}
+
+.volume {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 80%;
+    text-align: center;
+    bottom: 35%;
+    transform: rotate(-90deg);
+    font-size: 56px;
+    color: #a19696;
+}
+
+.number {
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 80%;
+    text-align: center;
+    bottom: 25%;
+    color: #a19696;
+    font-family: pesaro, sans-serif;
+    font-size: 24px;
+}
+
+.jelly {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.jelly img {
+    width: 80%;
+}
+
+.text {
+    white-space: nowrap;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 98%;
+    right: 0;
+    text-align: left;
+    bottom: 10%;
+    transform: rotate(-90deg);
+    color: #a19696;
+    font-family: janeausten, sans-serif;
+    font-size: 14px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: aspira, sans-serif;
+    border-top: 1px solid #000000;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+    .heading {
+        margin-top: 30px;
+        padding: 10px;
+        font-size: 18px;
+        width: 250px;
+        height: 60px;
+    }
+
+    .study_title {
+        width: 50%;
+        font-size: 96px;
+        padding-top: 20px;
+    }
+
+    .jelly {
+        margin-left: 200px;
+        margin-top: 60px;
+    }
+
+    .jelly img {
+        width: 100%;
+    }
+
+    .volume {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 80%;
+        text-align: center;
+        bottom: 45%;
+        transform: rotate(-90deg);
+        font-size: 96px;
+    }
+
+    .number {
+        bottom: 35%;
+        font-size: 36px;
+    }
+
+    .text {
+        left: 80%;
+        bottom: 30%;
+        font-size: 16px;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1200px) {
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .jelly {
+        padding-top: 40px;
+    }
+
+    .jelly img {
+        width: 100%;
+    }
+
+    .heading {
+        height: 60px;
+        padding-top: 10px;
+    }
+
+    .volume {
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 80%;
+        text-align: center;
+        bottom: 45%;
+        transform: rotate(-90deg);
+        font-size: 96px;
+    }
+
+    .number {
+        bottom: 25%;
+        font-size: 36px;
+    }
+
+    .text {
+        left: 80%;
+        bottom: 30%;
+        font-size: 16px;
+    }
+}
+
